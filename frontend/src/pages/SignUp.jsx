@@ -35,11 +35,11 @@ function SignUp() {
       
       navigate("/customize");
     } catch (error) {
-      console.lohg(error)
+      console.log(error)
       setUserData(null)
       setLoading(false)
-      setErr(err.response.data.message);
-    } 
+      setErrorMsg(error.response?.data?.message)
+    }
   };
 
   return (
